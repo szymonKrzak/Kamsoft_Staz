@@ -1,0 +1,20 @@
+﻿<Window x:Class="PrismMVVMBinding.Shell"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:const="clr-namespace:PrismMVVMBinding"
+        xmlns:prism="http://prismlibrary.com/"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Title="Shell" Height="350" Width="525">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <ItemsControl prism:RegionManager.RegionName="{x:Static const:Regions.MenuRegion}" Grid.Row="0"/>
+        <ItemsControl prism:RegionManager.RegionName="{x:Static const:Regions.MainRegion}" Grid.Row="1"/>
+
+
+    </Grid>
+</Window>

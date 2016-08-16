@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrismMVVMBinding", "PrismMVVMBinding\PrismMVVMBinding.csproj", "{99356EDD-A766-421B-85E6-F48B5E599C95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleOne", "ModuleOne\ModuleOne.csproj", "{7DC99B65-33EC-4140-A616-04C9E08BF471}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{DE798BBD-5C88-4FDE-B182-42F3B247C5B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99356EDD-A766-421B-85E6-F48B5E599C95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99356EDD-A766-421B-85E6-F48B5E599C95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99356EDD-A766-421B-85E6-F48B5E599C95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99356EDD-A766-421B-85E6-F48B5E599C95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC99B65-33EC-4140-A616-04C9E08BF471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC99B65-33EC-4140-A616-04C9E08BF471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC99B65-33EC-4140-A616-04C9E08BF471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC99B65-33EC-4140-A616-04C9E08BF471}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE798BBD-5C88-4FDE-B182-42F3B247C5B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE798BBD-5C88-4FDE-B182-42F3B247C5B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE798BBD-5C88-4FDE-B182-42F3B247C5B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE798BBD-5C88-4FDE-B182-42F3B247C5B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
