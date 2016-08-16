@@ -1,0 +1,44 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:c="clr-namespace:Wpf"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <c:PersonList x:Key="PersonList">
+            <c:Person FirstName="xxxxxx" LastName="yyyyyy" YearOfBirth="1"/>
+            <c:Person FirstName="aaaaa" LastName="bbbbbb" YearOfBirth="2"/>
+        </c:PersonList>
+
+        <DataTemplate x:Key="listBoxItem">
+            <Border BorderBrush="Red" BorderThickness="2" CornerRadius="5">
+                <StackPanel Name="itemPanem" Orientation="Vertical" Margin="5">
+                    <TextBlock Text="{Binding Path=FirstName}" Foreground="Blue" />
+                    <TextBlock Text="{Binding Path=LastName}" Foreground="Green" />
+                    <TextBlock Text="{Binding Path=YearOfBirth}" Foreground="Red" />
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+    </Window.Resources>
+    <Grid>
+        <ListBox Name="listBox" Width="100" Height="250" HorizontalAlignment="Left" ItemsSource="{StaticResource ResourceKey=PersonList}" ItemTemplate="{StaticResource ResourceKey=listBoxItem}" >
+        </ListBox>
+        
+
+        <!--<Label Content="{Binding Source={StaticResource ResourceKey=Marek}, Path=FirstName}" Grid.Column="0" Grid.Row="0" />
+        <Label Content="{Binding Source={StaticResource ResourceKey=Marek}, Path=LastName}" Grid.Column="0" Grid.Row="1" />
+        <Label Content="{Binding Source={StaticResource ResourceKey=Marek}, Path=YearOfBirth}" Grid.Column="0" Grid.Row="2" />-->
+
+        <!--<TextBox x:Name="textbox" Text="{Binding ElementName=label, Path=Content, UpdateSourceTrigger=Explicit}" Width="100" Height="20" Margin="382,48,35,53"/>
+        <Label x:Name="label"  Width="100" Height="32" Margin="381,4,36,85"/>
+        <Button x:Name="button" Click="button_Click" Width="100" Height="30" Margin="382,84,35,7"/>
+
+        <Slider x:Name="slider" Minimum="0" Maximum="100" HorizontalAlignment="Left" Margin="20,48,0,47" Width="126" Value="{Binding ElementName=labels, Path=Content, UpdateSourceTrigger=Explicit}"/>
+        <Label x:Name="labels"  HorizontalAlignment="Left" Height="26" Margin="24,13,0,0" VerticalAlignment="Top" Width="143"/>
+        <Button x:Name="buttons"  HorizontalAlignment="Left" Height="35" Margin="15,76,0,0" VerticalAlignment="Top" Width="153" Click="buttons_Click"/>-->
+
+    </Grid>
+
+</Window>
+    

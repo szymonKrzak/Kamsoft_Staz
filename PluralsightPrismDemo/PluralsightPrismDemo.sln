@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralsightPrismDemo", "PluralsightPrismDemo\PluralsightPrismDemo.csproj", "{986B92CD-4E88-4BD2-BEF8-90B4C6E638BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{21DD34A1-DFD6-418D-A70E-88C50D0AA336}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{247FC401-D9E5-4E38-A05C-D32603DD1156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleA", "ModuleA\ModuleA.csproj", "{1D571DBC-7072-47F9-BADC-98BD6D0A3159}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralsightPrismDemo.Common", "PluralsightPrismDemo.Common\PluralsightPrismDemo.Common.csproj", "{C95515F9-CC6F-43C5-9B9C-A58BFF0EE51D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralsightPrismDemo.Business", "PluralsightPrismDemo.Business\PluralsightPrismDemo.Business.csproj", "{748A2A5D-AE60-42B5-9282-46F5AFB03C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PluralsightPrismDemo.Toolbar", "PluralsightPrismDemo.Toolbar\PluralsightPrismDemo.Toolbar.csproj", "{987D87C3-F382-4E25-81DA-C405F6E5319F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModuleB", "ModuleB\ModuleB.csproj", "{92BAD022-696A-4192-96CC-BAEC9210715B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{986B92CD-4E88-4BD2-BEF8-90B4C6E638BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{986B92CD-4E88-4BD2-BEF8-90B4C6E638BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{986B92CD-4E88-4BD2-BEF8-90B4C6E638BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{986B92CD-4E88-4BD2-BEF8-90B4C6E638BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1D571DBC-7072-47F9-BADC-98BD6D0A3159}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D571DBC-7072-47F9-BADC-98BD6D0A3159}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D571DBC-7072-47F9-BADC-98BD6D0A3159}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D571DBC-7072-47F9-BADC-98BD6D0A3159}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C95515F9-CC6F-43C5-9B9C-A58BFF0EE51D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C95515F9-CC6F-43C5-9B9C-A58BFF0EE51D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C95515F9-CC6F-43C5-9B9C-A58BFF0EE51D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C95515F9-CC6F-43C5-9B9C-A58BFF0EE51D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748A2A5D-AE60-42B5-9282-46F5AFB03C01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748A2A5D-AE60-42B5-9282-46F5AFB03C01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748A2A5D-AE60-42B5-9282-46F5AFB03C01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748A2A5D-AE60-42B5-9282-46F5AFB03C01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{987D87C3-F382-4E25-81DA-C405F6E5319F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{987D87C3-F382-4E25-81DA-C405F6E5319F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{987D87C3-F382-4E25-81DA-C405F6E5319F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{987D87C3-F382-4E25-81DA-C405F6E5319F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92BAD022-696A-4192-96CC-BAEC9210715B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92BAD022-696A-4192-96CC-BAEC9210715B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92BAD022-696A-4192-96CC-BAEC9210715B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92BAD022-696A-4192-96CC-BAEC9210715B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D571DBC-7072-47F9-BADC-98BD6D0A3159} = {21DD34A1-DFD6-418D-A70E-88C50D0AA336}
+		{748A2A5D-AE60-42B5-9282-46F5AFB03C01} = {247FC401-D9E5-4E38-A05C-D32603DD1156}
+		{987D87C3-F382-4E25-81DA-C405F6E5319F} = {21DD34A1-DFD6-418D-A70E-88C50D0AA336}
+		{92BAD022-696A-4192-96CC-BAEC9210715B} = {21DD34A1-DFD6-418D-A70E-88C50D0AA336}
+	EndGlobalSection
+EndGlobal

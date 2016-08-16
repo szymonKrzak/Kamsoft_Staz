@@ -1,0 +1,79 @@
+﻿<Window x:Class="Lib.Startup.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:shell="http://schemas.microsoft.com/winfx/2006/xaml/presentation/shell"
+        xmlns:Behaviors="clr-namespace:Lib.Startup.Behaviors"        
+        xmlns:Views="clr-namespace:Lib.Startup"
+        Width="600" Height="370" SizeToContent="Height"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None" ResizeMode="NoResize"
+        x:Name="loginWindow"
+        Focusable="False"
+        Icon="pack://application:,,,/Lib.Startup;component/login.ico"
+        Title="Logowanie"
+        UseLayoutRounding="True">
+
+    <shell:WindowChrome.WindowChrome>
+        <shell:WindowChrome
+            ResizeBorderThickness="0"
+            CaptionHeight="130"
+            GlassFrameThickness="1"
+            CornerRadius="0">
+        </shell:WindowChrome>
+    </shell:WindowChrome.WindowChrome>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <BitmapImage x:Key="imgUIClose" UriSource="/Lib.Startup;component/uiClose.png"/>
+            <SolidColorBrush x:Key="primaryUIBrush" Color="#FFFFFF"/>
+            <SolidColorBrush x:Key="primaryUIBorderBrush" Color="#FF285C9E" />
+            <!--<SolidColorBrush x:Key="headerBackgroundBrush" Color="#FFBABABA" />
+            <SolidColorBrush x:Key="headerLogoBackgroundBrush" Color="#FFABABAB" />-->
+            <SolidColorBrush x:Key="headerBackgroundBrush" Color="#FF285C9E" />
+            <SolidColorBrush x:Key="headerLogoBackgroundBrush" Color="#084490" />
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <Border Background="{StaticResource primaryUIBrush}"
+            BorderBrush="{StaticResource primaryUIBorderBrush}" BorderThickness="1">
+
+        <Grid Margin="3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Row="0" Grid.Column="0" Width="180" Background="{StaticResource headerLogoBackgroundBrush}"/>
+            <!-- HeaderBar mieszczący się na 130 punktach wysokości -->
+                <Grid Name="Header" Grid.Row="0" Grid.Column="1" Background="{StaticResource headerBackgroundBrush}" >
+
+                <!-- Przycisk zamykający okenko logowania -->
+                <Button x:Name="btnClose" HorizontalAlignment="Right" VerticalAlignment="Top" Height="35" Width="45" Margin="0,0,0,0" 
+                        shell:WindowChrome.IsHitTestVisibleInChrome="True" Click="BtnClose_Click" Focusable="False">
+                    <Button.Template>
+                        <ControlTemplate TargetType="Button">
+                            <Grid Background="Transparent" Name="CloseGrid"><!--#FFC75050-->
+                                <Image Source="{StaticResource imgUIClose}" Height="10"/>
+                            </Grid>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter Property="Background" TargetName="CloseGrid" Value="#FFE04343"/>
+                                </Trigger>
+                                <Trigger Property="IsPressed" Value="True">
+                                    <Setter Property="Background" TargetName="CloseGrid" Value="#FF993D3D"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>             
+            </Grid>
+
+            <!--<ContentControl Content="{Binding View, ElementName=loginWindow}" Grid.Row="1"/>-->
+            <Views:LoginView Grid.Row="1" Grid.ColumnSpan="2"/>
+        </Grid>
+    </Border>
+</Window>
